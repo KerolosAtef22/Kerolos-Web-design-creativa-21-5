@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: rgb(29, 31, 31);
+}
+.d-flex{
+    display: flex;
+    justify-content:space-around;
+    align-items:first baseline;
+}
+.bg-section{
+     height: 600px;
+     background-image: url("imagefile/bg2.jpg");
+
+}
+
