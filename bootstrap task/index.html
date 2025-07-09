@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="bg-image">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">
+                    <i class="fa-solid fa-paw m-1"></i>Paws n'play
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-white" href="#shop" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-warning" type="submit">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-content overflow-hidden">
+            <div class="container py-5">
+                <div class="row d-inline-block m-3 py-5">
+                    <div class="col-12 col-md-10 col-lg-6 text-white">
+                        <h2>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h2>
+                        <p class="text-pramiry">
+                            Welcome to Paws n’ Play, the ultimate destination for pet
+                            lovers! Explore a world of tail-wagging joy and furry
+                            companionship with our wide range of products and services. From
+                            pampering essentials to playful toys, we're here to make every
+                            moment with your pet pawsitively perfect!
+                        </p>
+                        <button class="btn btn-outline-warning rounded-pill">
+                            Shop Now <i class="fa-solid fa-paw m-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop -->
+
+    <section class="shop mt-5" id="pets-shop">
+        <div class="container">
+            <div class="address">
+                <h2><i class="fa-solid fa-paw m-2"></i>Shop</h2>
+                <hr />
+            </div>
+            <div class="border-all">
+                <div class="content-shop d-flex justify-content-between">
+                    <h2>Featured Products</h2>
+
+                    <form class="d-flex" role="search">
+
+                        <input class="form-control rounded-pill" type="search" placeholder="Search"
+                            aria-label="Search" />
+                    </form>
+                </div>
+
+                <ul class="nav nav-pills mb-5 d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link  active " id="pills-random-tab" data-bs-toggle="pill"
+                            data-bs-target="#random" type="button" role="tab" aria-controls="pills-random"
+                            aria-selected="true">
+                            Random
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-cat-tab" data-bs-toggle="pill" data-bs-target="#cat"
+                            type="button" role="tab" aria-controls="pills-cat" aria-selected="true">
+                            Cat
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-dogs-tab" data-bs-toggle="pill" data-bs-target="#dogs"
+                            type="button" role="tab" aria-controls="pills-dogs" aria-selected="true">
+                            Dogs
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link " id="pills-fish-tab" data-bs-toggle="pill" data-bs-target="#fish"
+                            type="button" role="tab" aria-controls="pills-fish" aria-selected="true">
+                            Fish
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link " id="pills-bird-tab" data-bs-toggle="pill" data-bs-target="#bird"
+                            type="button" role="tab" aria-controls="pills-bird" aria-selected="true">
+                            Birds
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="random" role="tabpanel" aria-labelledby="pills-home-tab"
+                        tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat01.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat02.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat01.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="cat" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat01.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat02.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/cat01.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="dogs" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/dog01.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/dog02.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/dog03.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fish" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/fish02 (2).jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/fish03.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/fish02 (3).jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="bird" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/brid01 (1).jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/brid02.jpg" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex justify-content-between gap-3 my-2">
+                                <img class="w-100 rounded" src="imges/brid03.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-shop d-flex justify-content-end my-2">
+                    <h6>
+                        <a class="list-unstyled text-decoration-none text-dark" href="">View More >>></a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="container mt-5">
+      <div class="d-flex pt-5 border-bottom border-color">
+        <a href="#"><i class="fa-solid fa-paw px-3 text-black"></i></a>
+        <h5>Servicses</h5>
+      </div>
+      <div class="row mt-4 w-90 border border-color border-bottom-0 m-auto p-4">
+        <div class="col-sm-12 col-lg-8">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="imges/do.jpg"
+                  class="services-img img-border"
+                  alt="..."
+                />
+                <div class="overlay img-border">
+                  <h4>Grooming</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="imges/bromax.jpg"
+                  class="services-img img-border"
+                  alt="..."
+                />
+                <div class="overlay img-border">
+                  <h4>Boarding</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="imges/bro.jpg"
+                  class="services-img img-border"
+                  alt="..."
+                />
+                <div class="overlay img-border">
+                  <h4>Veterinary</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="imges/doctor03.jpg"
+                  class="services-img img-border"
+                  alt="..."
+                />
+                <div class="overlay img-border">
+                  <h4>Training</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-sm-2">
+          <div class="col">
+            <div class="card position-relative">
+              <img
+                src="imges/doctor04.jpg"
+                class="services-img-lg img-border"
+                alt="..."
+              />
+              <div class="overlay img-border">
+                <h4>Adoption</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="about_us" id="about_us">
+        <div class="container">
+            <div class="address">
+                <h2><i class="fa-solid fa-paw m-2"></i>About Us</h2>
+                <hr />
+            </div>
+            <div class="border-all">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <p class="p-2">
+                                At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired
+                                by the unwavering companionship and joy they bring to our lives, we embarked on a
+                                mission to create a haven where pets and their owners alike could experience
+                                unparalleled happiness and care.
+                            </p>
+                            <p class="p-2">
+                                Driven by our passion for animal welfare, we hand-select each product and service with
+                                meticulous attention to quality and sustainability. From nutritious food and enriching
+                                toys to expert grooming and healthcare, every offering is carefully curated to meet the
+                                unique needs of our beloved furry friends.
+                            </p>
+                            <p class="p-2">
+                                But our commitment doesn't end there. We're dedicated to fostering a community that
+                                celebrates the bond between pets and their human companions. Through educational
+                                resources, compassionate support, and memorable experiences, we strive to empower pet
+                                owners to provide the best possible care for their furry family members.
+                            </p>
+                            <p class="p-2">At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding
+                                principle. We go above and beyond to ensure every interaction leaves tails wagging and
+                                hearts smiling. From personalized recommendations to attentive service, we're here to
+                                make your journey with your pet as joyful and fulfilling as possible.</p>
+                            <p class="p-2">Join us in our mission to create a world where every pet is cherished, every
+                                need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are
+                                family, and love knows no bounds.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="about-img w-75  position-relative">
+                            <img src="imges/doctor03.jpg" alt="hero" class="img-fluid w-100 mb-0 img-h" />
+                            <img src="imges/ellis-lee-S_9VHDqGnxM-unsplash.jpg" alt="hero"
+                                class="img-fluid  w-50 mb-0 img-pos   " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- our team -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="address">
+                <h2><i class="fa-solid fa-paw m-2"></i>Our Team</h2>
+                <hr />
+                <div class="row g-4 my-4">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between gap-3 my-2">
+                        <div class="team-image">
+                            <img class="w-100 rounded img-h" src="imges/doctor01.jpg" alt="" />
+                            <div class="team-content">
+                                <h2 class="fw-medium pt-2">Dr. Olivia Rhye</h2>
+                                <h6 class="fs-6 fw-lighter">Senior Veterinarian</h6>
+                                <ul class="d-flex gap-2 text-decoration-none list-unstyled ">
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between gap-3 my-2">
+                        <div class="team-image">
+                            <img class="w-100 rounded img-h" src="imges/doctor01.jpg" alt="" />
+                            <div class="team-content">
+                                <h2 class="fw-medium pt-2">Phoenix Baker</h2>
+                                <h6 class="fs-6 fw-lighter">Asst. Veterinarian</h6>
+                                <ul class="d-flex gap-2 text-decoration-none list-unstyled">
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between gap-3 my-2">
+                        <div class="team-image">
+                            <img class="w-100 rounded img-h" src="imges/doctor01.jpg" alt="" />
+                            <div class="team-content">
+                                <h2 class="fw-medium pt-2">Lana Steiner</h2>
+                                <h6 class="fs-6 fw-lighter">Resident Veterinarian</h6>
+                                <ul class="d-flex gap-2 text-decoration-none list-unstyled">
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between gap-3 my-2">
+                        <div class="team-image">
+                            <img class="w-100 rounded img-h" src="imges/doctor01.jpg" alt="" />
+                            <div class="team-content">
+                                <h2 class="fw-medium pt-2">Demi Wilkinson</h2>
+                                <h6 class="fs-6 fw-lighter">Intern Veterinarian</h6>
+                                <ul class="d-flex gap-2 text-decoration-none list-unstyled">
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog mt-5" id="blog">
+        <div class="container">
+            <div class="address">
+                <h2><i class="fa-solid fa-paw m-2"></i>Blog</h2>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2>Milestone: 20,000 Pets Treated</h2>
+                    <hr />
+                    <p class="fw-light">
+                        Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat
+                        mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu
+                        quis fusce augue enim. Quis at habitant diam at. Suscipit
+                        tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum
+                        molestie aliquet sodales id est ac volutpat.
+                    </p>
+                    <h4>Renewed target</h4>
+                    <p class="fw-light">
+                        Pharetra morbi libero id aliquam elit massa integer tellus. Quis
+                        felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit
+                        dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in
+                        ac.
+                    </p>
+                    <button class="btn btn-dark">Read More</button>
+                </div>
+
+                <div class="col-12 col-lg-6 pt-4 pt-lg-5 text-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jXHOHOYkbYc?si=XE8PeznKGatBEpCo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- touch -->
+    <section id="touch" class="touch mt-5 bg-dark py-5 ">
+        <div class="container ">
+            <div class="address text-white">
+                <h2><i class="fa-solid fa-paw m-2 "></i>Our Team</h2>
+                <hr class="py-3" />
+            </div>
+            <div class="row g-5">
+
+
+                <div class="col-12 col-lg-6">
+                    <div class="bg-white text-dark rounded p-4 shadow">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label>First name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col">
+                                    <label>Last name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="you@company.com">
+                            </div>
+                            <div class="mb-3">
+                                <label>Message</label>
+                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="agree">
+                                <label class="form-check-label" for="agree">
+                                    You agree to our friendly <a href="#" class="text-decoration-none">privacy
+                                        policy</a>.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Send message</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-6 py-5 ">
+                    <div class="row g-4 ">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="me-3 text-light">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                                <h4>Email</h4>
+                                <p class="mb-2 fw-light ">Our friendly team is here to help.</p>
+                                <p class="mb-2  ">hello@pawsnplay.com</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="me-3 text-light">
+                                <i class="fa-regular fa-message"></i>
+                                <h4>Live Chat</h4>
+                                <p class="mb-2 fw-light ">Our friendly team is here to help.</p>
+                                <p class="mb-2  ">Start new chat</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="me-3 text-light">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h4>Office</h4>
+                                <p class="mb-2 fw-light ">Come say hello at our office HQ.</p>
+                                <p class="mb-2  ">123, Yaya Abatan st, Ogba Lagos.</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="me-3 text-light">
+                                <i class="fa-solid fa-phone"></i>
+                                <h4>Phone</h4>
+                                <p class="mb-2 fw-lighter  ">Mon-Fri from 8am to 5pm.</p>
+                                <p class="mb-2  ">+234 901234 384</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+        <hr class="text-white " />
+
+
+
+
+    </section>
+
+
+    <!-- footer -->
+
+
+    <footer class="footer bg-dark py-3 " id="footer">
+
+        <div class="container d-flex justify-content-between">
+            <div class="content-footer">
+                <p class="text-white">© 2024 Paws n’ Play. All rights reserved.</p>
+            </div>
+            <div class="icon-footer">
+                <ul class="text-decoration-none list-unstyled d-flex justify-content-between gap-4">
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+    <footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+
+    <!-- Newsletter -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <h6>Join our newsletter</h6>
+        <p>Be the first to receive latest updates on promo, sales and offers</p>
+      </div>
+      <div class="col-md-4">
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Enter your email">
+          <button class="btn btn-light">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer columns -->
+    <div class="row text-muted">
+      <div class="col-md-2 mb-3">
+        <h5 class="text-white mb-2">
+          <i class="bi bi-heart-fill me-2"></i>Paws n’ Play
+        </h5>
+        <p>Where wagging tails and purring hearts reign supreme!</p>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">Shop</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-muted">Pet Adoption</a></li>
+          <li><a href="#" class="text-muted">Nutrition</a></li>
+          <li><a href="#" class="text-muted">Pet Care</a></li>
+          <li><a href="#" class="text-muted">Pet Food</a></li>
+          <li><a href="#" class="text-muted">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-muted">About us</a></li>
+          <li><a href="#" class="text-muted">Careers</a></li>
+          <li><a href="#" class="text-muted">Press</a></li>
+          <li><a href="#" class="text-muted">News</a></li>
+          <li><a href="#" class="text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-muted">Grooming</a></li>
+          <li><a href="#" class="text-muted">Boarding</a></li>
+          <li><a href="#" class="text-muted">Training</a></li>
+          <li><a href="#" class="text-muted">Veterinary</a></li>
+          <li><a href="#" class="text-muted">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">Social</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-muted">Twitter</a></li>
+          <li><a href="#" class="text-muted">LinkedIn</a></li>
+          <li><a href="#" class="text-muted">Facebook</a></li>
+          <li><a href="#" class="text-muted">AngelList</a></li>
+          <li><a href="#" class="text-muted">Dribbble</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-muted">Terms</a></li>
+          <li><a href="#" class="text-muted">Privacy</a></li>
+          <li><a href="#" class="text-muted">Cookies</a></li>
+          <li><a href="#" class="text-muted">Licenses</a></li>
+          <li><a href="#" class="text-muted">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-top border-secondary mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0 text-muted">&copy; 2024 Paws n’ Play. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-peace"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-dribbble"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

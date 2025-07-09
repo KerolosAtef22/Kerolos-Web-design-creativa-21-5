@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+.bg-image{
+    background: url(imges/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+}
+.img-pos{
+    position: absolute;
+    top: 60%;
+    left: -15%;
+    border: 15px solid white;
+    border-radius: 15px;
+}
+.img-h{
+    height: 70vh;
+}
+i{
+    color: #000 !important;
+}
+.services-img{
+    height: 15vw;
+}
+.services-img-lg{
+    height: 32vw;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.318);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
